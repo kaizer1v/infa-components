@@ -1,0 +1,38 @@
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	
+	&:before,
+	&:after {
+		content: " "; 	// 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.col {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+/* 	margin-top: 10px;
+	margin-bottom: 10px; */
+	display: block;
+	float: left;
+	padding-left: (@grid-gutter / 2);
+	padding-right: (@grid-gutter / 2);
+}
+
+/* col-1, col-2, ... col-10 */
+@iterations: 10;
+.grid-loop (@i) when (@i > 0) {
+	@p: @i*10;
+	.col-@{i} {
+		width: ~"@{p}%";
+	}
+	.grid-loop(@i - 1);
+}
+
+.grid-loop(@iterations);

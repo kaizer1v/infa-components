@@ -1,0 +1,147 @@
+.infa-table {
+	width: 100%;
+	background-color: @table-bg;
+	text-align: left;
+	border-collapse: collapse;
+	
+	tr {
+		/* border-top: 1px solid @table-border-color; */
+		border-bottom: 1px solid @table-border-color;		
+		.title {
+			color: #666;
+		}
+		
+		.selected-row {
+			background: @table-bg-selected;
+		}
+	}
+	
+	
+	thead tr.task-row td,
+	thead tr th,
+	tbody tr td,
+	tfoot tr td {
+		padding: @table-cell-padding;
+		
+		> * {
+		}
+		p {
+			padding: 0;
+			margin: 0;
+		}
+	}
+	
+	> thead {
+		> tr {
+			> th {
+				background: @table-bg-head;
+				font-weight: bold;
+				vertical-align: middle;
+			}
+		}
+		
+		.task-row > td {
+			input[type=text],
+			input[type=search],
+			input[type=date],
+			select {
+				width: 60%;
+				float: left;
+				margin-right: 5px;
+			}
+			
+			.icon {
+				float: left;
+			}
+		}
+	}
+	
+	> tbody {
+		> tr {
+			&:hover {
+				background: @table-bg-hover;
+			}
+			
+			> td {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.infa-table-striped {
+	.infa-table;
+	> tbody > tr:nth-child(even) {
+		> td,
+		> th {
+			background-color: @table-bg-alternate;
+		}
+	}
+}
+
+
+.infa-form-table {
+	text-align: left;
+	width: 80%;
+	border-collapse: collapse;
+	
+	> tr {
+		
+		th,
+		td {
+		}
+	}
+	
+	> thead {
+		th, td {
+			padding: @table-cell-padding;
+			font-weight: normal;
+		}
+	}
+	
+	> tbody,
+	> .form-section {
+		margin: @form-section-margin 0;
+		padding-bottom: 5px;
+		
+		&::before {
+			content: '';
+			display: block;
+			height: @form-section-margin;
+		}
+		
+		> tr {
+			border: none;
+			&:last-child > td {
+				padding-bottom: @form-section-margin;
+			}
+			> td {
+				vertical-align: top;
+				padding: @table-cell-padding;
+				text-align: left;
+				
+				input[type=text],
+				input[type=password],
+				select,
+				textarea {
+					width: 60%;
+				}
+				
+				input[type=radio] {
+					width: auto;
+					margin: 0;
+				}
+				
+				input[type=checkbox] {
+					width: 15px;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.icon {
+		margin: 0 5px;
+		vertical-align: middle;
+	}
+}

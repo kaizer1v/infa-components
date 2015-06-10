@@ -1,0 +1,56 @@
+body {
+	font-family: @font-family;
+	font-size: @font-size-base;
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: @headings-font-family;
+		font-weight: @headings-font-weight;
+		line-height: @headings-line-height;
+		color: @headings-color;
+		margin-bottom: 20px;
+	}
+
+}
+
+/* Bold Text */
+table th,
+label,
+.text-bold	 			{ font-weight: bold; }
+
+
+/* Error Text */
+.text-error 			{ color: @infa-red; }
+
+/* Active Text */
+a,
+.text-active 			{ color: @infa-primary; }
+
+
+/* Disabled Text */
+.text-disabled 			{ color: @gray-light; }
+
+
+/* Text Alignment */
+.text-center			{ text-align: center !important; }
+.text-right 			{ text-align: right !important; }
+.text-left 				{ text-align: left !important; }
+
+
+/* Text Colours */
+.text-infa-green 		{ color: @infa-green !important; }
+.text-infa-orange 		{ color: @infa-orange !important; }
+.text-infa-lblue 		{ color: @infa-lblue !important; }
+.text-infa-dblue 		{ color: @infa-dblue !important; }
+.text-infa-gray	 		{ color: @gray !important; }
+.text-infa-red	 		{ color: @infa-red !important; }
+
+.title 					{ font-size: @font-size-h4; font-weight: bold; }
+.title:hover			{ color: @gray-dark; }
+
+.sub-title				{ font-size: @font-size-h5; font-weight: bold; margin: 10px 0; }
+
+
+/* Big Text Numbers */
+.text-big-number { font-size: @font-size-h1; }
+.text-medium-number { font-size: @font-size-h2; }

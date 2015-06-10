@@ -1,0 +1,23 @@
+.tree ul {
+	list-style: none;
+	padding-left: 0px;
+	
+	li {
+		display: block;
+		cursor: pointer;
+		margin: 2px 0;
+		vertical-align: middle;
+	
+		a {
+			display: inline-block;
+			padding: @tree-item-padding;
+			color: @text-color;
+			cursor: pointer;
+		}
+	
+	}
+	
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
+}

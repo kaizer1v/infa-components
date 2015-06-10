@@ -1,0 +1,36 @@
+.box {
+	border: 1px solid @box-border-color;
+	border-collapse: collapse;
+	
+	.box-title {
+		.infa-table;
+		
+		tr {
+			border-bottom: 1px solid @table-border-color;
+			th {
+				font-size: @box-title-font-size;
+				color: @box-title-color;
+				padding: @table-cell-padding;
+				
+				> a {
+					color: inherit;
+					font-weight: bold;
+				}
+			}
+			&:hover {
+				background: transparent !important;
+				th {
+					color: @gray-darker;
+					> a {
+						color: inherit;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	
+	.box-content {
+		padding: @box-padding;
+	}
+}

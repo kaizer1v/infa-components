@@ -1,0 +1,8 @@
+{
+  "name": "informatica_components",
+  "version": "0.1.0",
+  "description": "Light weight Informatica front-end components, combining to form a component library.",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

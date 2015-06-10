@@ -1,0 +1,67 @@
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+
+input {
+	padding: 3px;
+
+	/* Position radios and checkboxes better */
+	/* &[type="radio"], */
+	&[type="checkbox"] {
+		margin: 4px 0 0;
+		margin-top: 1px \9; // IE8-9
+		line-height: normal;
+	}
+
+	/* Make range inputs behave like textual form controls */
+	&[type="range"] {
+		display: block;
+		width: 100%;
+	}
+	
+	&[type="email"]:before {
+		content: "Email: ";
+	}
+}
+
+textarea {
+	
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	// Chrome and Firefox set a `min-width: -webkit-min-content;` on fieldsets,
+	// so we reset that to ensure it behaves more like a standard block element.
+	// See https://github.com/twbs/bootstrap/issues/12359.
+	min-width: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: @line-height-base;
+	font-size: (@font-size-base * 1.5);
+	line-height: inherit;
+	/* color: @legend-color; */
+	border: 0;
+	/* border-bottom: 1px solid @legend-border-color; */
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+// Make multiple select elements height not fixed
+select,
+select[multiple],
+select[size] {
+	padding: 2px;
+	height: auto;
+}
+

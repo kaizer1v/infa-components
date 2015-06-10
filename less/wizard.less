@@ -1,0 +1,59 @@
+.infa-wizard {
+	.wizard-actions {
+		.infa-table;
+	}
+	
+	.wizard-steps {
+		width: 100%;
+		border: 1px solid #ccc;
+		
+		tr {
+			td {
+				padding: 5px;
+				cursor: pointer;
+				border-left: 1px solid #ccc;
+				
+				&:hover {
+					background: #ccc;
+				}
+				&:first-child,
+				&:last-child {
+					border: none;
+				}
+				
+				&:last-child {
+					&:hover {
+						background: transparent;
+						cursor: default;
+					}
+				}
+				
+				> a {
+					display: block;
+					line-height: @line-height-base;
+					color: #000;
+				}
+			}
+			
+			
+			.active {
+				background: @table-bg-selected;
+			}
+		}
+		
+		.icon-notif-number {
+			background: #fff;
+		}
+	}
+	
+	.wizard-content {
+		> .wizard-pane {
+			display: none;
+			padding: 5px;
+		}
+		> .active {
+			display: block;
+		}
+	}
+
+}

@@ -1,0 +1,95 @@
+button,
+.btn,
+input[type=submit] {
+	color: #fff;
+	display: inline-block;
+	background-color: @btn-default-bg;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: middle;
+	cursor: pointer;
+	/* background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214 */
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: @btn-padding;
+	.border-radius;
+	
+	&:hover,
+	&:focus {
+		background-color: @infa-primary;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	&:active,
+	&.active {
+		background-color: @infa-primary;
+		outline: 0;
+		background-image: none;
+		/* .box-shadow(inset 0 3px 5px rgba(0,0,0,.125)); */
+	}
+
+	.btn-inactive,
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		background: #ccc;
+		cursor: not-allowed;
+		pointer-events: none;
+		color: @gray-lighter;
+	}
+	
+	/* for Button dropdowns */
+	.icon-carat {
+		margin-left: 5px;
+	}
+	a.dropdown-link {
+		color: #fff;
+		padding: 0;
+	}
+	.dropdown-menu {
+		margin-left: -6px;
+	}
+	
+}
+
+/* Types of buttons */
+.btn-primary {
+	background-color: @infa-primary;
+	&:hover {
+		background-color: @infa-dblue;
+	}
+}
+
+.btn-next:after { content: " \203A"; }
+.btn-prev:before { content: "\2039  "; }
+.btn-dropdown:after { content: " " }
+
+
+/* For file upload */
+input[type=file],
+.btn-file {
+	&::-webkit-file-upload-button {
+		visibility: hidden;
+	}
+
+	&:before {
+		content: "Choose File...";
+		background-color: @btn-default-bg;
+		padding: @btn-padding;
+		margin-right: 5px;
+		color: #fff;
+		cursor: pointer;
+		outline: none;
+		.border-radius;
+		
+		&:hover,
+		&:focus,
+		&:active::before {
+			background-color: @infa-primary;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}

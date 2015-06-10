@@ -1,0 +1,203 @@
+/* Variables */
+
+
+/* ======================= */
+/* Colours */
+/* ======================= */
+@infa-orange: 		#ff800e;
+@infa-lblue: 		#2cabe0;
+@infa-dblue: 		#254ea2;
+@infa-green: 		#46bfbd;
+@infa-purple: 		#6c3b5e;
+@infa-fl-green: 	#dff699;
+@infa-red:			#ed1c24;
+
+@gray-darker:       lighten(#000, 13.5%); /* #222 */
+@gray-dark:         lighten(#000, 20%);   /* #333 */
+@gray:              lighten(#000, 33.5%); /* #555 */
+@gray-light:        lighten(#000, 60%);   /* #999 */
+@gray-lighter:      lighten(#000, 93.5%); /* #eee */
+
+@infa-primary:		#3399ff;
+@infa-secondary:	@gray-light;
+@infa-tertiary:		#ccc;
+
+
+@body-bg:			#fff;
+@text-color: 		#000;
+
+@link-color: 		@infa-primary;
+@link-hover-color: 	@infa-primary;
+
+
+@border-radius-base: 2px;
+
+
+
+/* ======================= */
+/* Helper */
+/* ======================= */
+.float-left			{ float: left }
+.float-right		{ float: right }
+
+/* ======================= */
+/* Typography */
+/* ======================= */
+@font-family: 				"Arial", sans-serif;
+@font-family-sans-serif:	"Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-monospace: 	Menlo, Monaco, Consolas, "Courier New", monospace;;
+
+@font-size-base: 	11px;
+@font-size-large: 	ceil((@font-size-base * 1.25));
+@font-size-small: 	ceil((@font-size-base * .85));
+
+	/* headings */
+	@font-size-h1:      floor((@font-size-base * 2.6)); 	/* ~px */
+	@font-size-h2:      floor((@font-size-base * 2.15)); 	/* ~px */
+	@font-size-h3:      ceil((@font-size-base * 1.7)); 		/* ~px */
+	@font-size-h4:      ceil((@font-size-base * 1.25)); 	/* ~px */
+	@font-size-h5:      @font-size-base;					/* ~px */
+	@font-size-h6:      ceil((@font-size-base * 0.85)); 	/* ~px */
+
+	@headings-font-family:	inherit;
+	@headings-font-weight: 	500;
+	@headings-line-height: 	1.1;
+	@headings-color: 		inherit;
+
+/* ======================= */
+/* Line Height */
+/* ======================= */
+@line-height-base: 1.428571429; /* 20/14 */
+@line-height-computed:	floor((@font-size-base * @line-height-base)); /* ~= 15.4 */
+
+
+/* ======================= */
+/* Z-Index */
+/* ======================= */
+	/* arranged from top most to bottom most */
+@z-index-modal:			11;
+@z-index-headerbar:		10;
+@z-index-dropdown-menu:	9;
+
+/* ======================= */
+/* Grid System */
+/* ======================= */
+@grid-gutter: 10px;
+
+	/* different container sizes for diff devides */
+	@container-desktop: (940 + @grid-gutter);
+
+	
+/* ======================= */
+/* Tables */
+/* ======================= */
+@table-bg: transparent;
+@table-bg-head: @gray-lighter;
+@table-bg-hover: @gray-lighter;
+@table-bg-selected: #dff699;
+@table-bg-alternate: @gray-lighter;
+
+@table-cell-padding: 5px;
+@table-border-color: #ccc;
+
+	/* Tabular Forms */
+	@form-section-margin:		20px;
+	
+/* ======================= */
+/* Forms */
+/* ======================= */
+@input-bg: #fff;
+@input-bg-disabled: @gray-lighter;
+
+@input-color: @gray;
+@input-border: #ccc;
+@input-border-focus: @infa-lblue;
+
+@input-color-placeholder: @gray-light;
+
+	
+/* ======================= */
+/* Buttons */
+/* ======================= */
+@btn-default-bg:		@gray-light;
+@btn-padding:			2px 5px;
+
+	
+/* ======================= */
+/* Lists */
+/* ======================= */
+@list-padding:			5px;
+
+@list-item-hover-bg:	@gray-lighter;
+@list-item-hover:		#000;
+@list-item-selected-bg:	@infa-fl-green;
+@list-item-selected:	#000;
+	
+	
+/* ======================= */
+/* Dropdowns */
+/* ======================= */
+@dropdown-bg:					#fff;
+@dropdown-border:				#ccc;
+@dropdown-default-width: 		200px;
+
+	@dropdown-link-color:		@gray-dark;
+	@dropdown-link-hover-bg:	@gray-lighter;
+	
+
+	
+/* ======================= */
+/* Headerbar */
+/* ======================= */
+@headerbar-bg:			#000;
+@headerbar-border:		#000;
+@header-link: 			@gray-light;
+@header-link-hover: 	#444;
+
+
+
+
+/* ======================= */
+/* Tabs */
+/* ======================= */
+@tabs-height:			16px;
+@tabs-margin:			5px;
+@tabs-padding:			5px;
+
+@tabs-link-color:		#666;
+@tabs-link-bg:			transparent;
+/* hover */
+@tabs-link-hover-bg:	#666;
+@tabs-link-hover-color:	#fff;
+/* active */
+@tabs-link-active-bg:	@tabs-link-hover-bg;
+@tabs-link-active-color:@tabs-link-hover-color;
+
+
+
+/* ======================= */
+/* Boxes */
+/* ======================= */
+@box-border-color:		#ccc;
+@box-padding:			5px;
+@box-title-color:		#666;
+@box-title-font-size: 	14px;
+
+
+
+/* ======================= */
+/* Modals */
+/* ======================= */
+@modal-dialog-width: 	50%;
+@modal-dialog-bg:		#fff;
+@modal-dialog-padding:	10px;
+@modal-title-size:		13px;
+
+
+
+
+/* ======================= */
+/* Tree */
+/* ======================= */
+@children-trees-margin-negate:			-20px;
+@tree-item-padding:						3px;

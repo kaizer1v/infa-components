@@ -1,0 +1,32 @@
+.headerbar {
+	margin: 0;
+	height: 50px;
+	width: 100%;
+	background-color: @headerbar-bg;
+	border: 1px solid @headerbar-border;
+	
+	& > tr:hover {
+		background-color: transparent;
+	}
+	
+	& tr > td {
+		text-align: left;
+		> a {
+			display: inline-block;
+			line-height: @line-height-base;
+			padding: 3px 5px;
+			color: @header-link;
+			
+			&:hover {
+				background: @header-link-hover;
+			}
+		}
+		
+	}
+	
+	input[type=search] { .center-me; }
+}
+
+.headerbar.fixed-top {
+	z-index: @z-index-headerbar;
+}

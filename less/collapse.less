@@ -1,0 +1,31 @@
+.panel-group {
+	.panel-content {
+		padding: 5px;
+	}
+	
+	> .panel {
+		.panel-title {
+			background: #ccc;
+			font-weight: bold;
+			color: #666;
+			font-size: 11px;
+		}
+		.panel-content {
+			/* display: none; */
+		}
+	}
+	
+	> .active {
+		.panel-title {
+			background: #fff;
+			color: #000;
+		}
+		.panel-content {
+			display: block;
+		}
+	}
+	
+	.panel-title {
+		cursor: pointer;
+	}
+}

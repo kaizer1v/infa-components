@@ -1,0 +1,67 @@
+.tabs-container {
+	width: 100%;
+	
+	> .tabs {
+		padding: 0;
+		background: #eee;
+		border-bottom: 1px solid #666;
+		.clearfix;
+		
+		> li {
+			outline: 0;
+			float: left;
+			display: block;
+			margin: 15px 2px 3px 2px;
+			position: relative;
+		
+			> a {
+				text-decoration: none;
+				background-color: @tabs-link-bg;
+				color: @tabs-link-color;
+				line-height: @line-height-base;
+				padding: @tabs-padding;
+				cursor: pointer;
+				
+				&:hover,
+				&:focus {
+					background-color: @tabs-link-hover-bg;
+					color: @tabs-link-hover-color;
+				}
+				
+			}
+			
+			> a.infa-orange:hover	{ background-color: @infa-orange; }
+			> a.infa-lblue:hover  	{ background-color: @infa-lblue; }
+			> a.infa-dblue:hover	{ background-color: @infa-dblue; }
+			> a.infa-green:hover 	{ background-color: @infa-green; }
+			> a.infa-purple:hover 	{ background-color: @infa-purple; }
+			
+			/* Tabs as dropdown */
+			.dropdown-link {
+				/* padding: 5px; */
+			}
+		}
+			
+		li.active {
+			> a {
+				background-color: @tabs-link-active-bg;
+				color: @tabs-link-active-color;
+			}
+			> a.infa-orange { background-color: @infa-orange; }
+			> a.infa-lblue 	{ background-color: @infa-lblue; }
+			> a.infa-dblue	{ background-color: @infa-dblue; }
+			> a.infa-green	{ background-color: @infa-green; }
+			> a.infa-purple	{ background-color: @infa-purple; }
+		}
+	}
+	
+	
+	.tabs-content {
+		> .tabs-pane {
+			display: none;
+		}
+		> .active {
+			display: block;
+		}
+	}
+}
