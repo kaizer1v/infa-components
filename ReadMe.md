@@ -1,4 +1,4 @@
-#Informatica Components
+#Informatica Components Library
 
 A bootstrap like library, written as a jquery plugin, which is used for internal prototyping purposes at Informatica corp.
 
