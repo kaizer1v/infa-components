@@ -1,0 +1,34 @@
+# Ignore all files that generally ought not to be committed into the repo.
+# Never commit sensitive data.
+# Never commit useless files.
+# Try not to commit large files.
+
+# Filenames should NOT have spaces
+* *
+
+# Old vis.py used to produce xhtml output. Ignore these
+*.xhtml
+
+# Backup files
+~$*
+*~
+*.bak*
+
+# Sublime-text workspaces, etc
+*.sublime-*
+
+# Typically bash.exe.stackdump on Cygwin
+*.stackdump
+
+# Ignore bower components and npm modules
+node_modules/
+bower_components/
+
+# Windows shortcut files
+*.lnk
+
+# Windows / Mac OS junk files
+Desktop.ini
+$RECYCLE.BIN/
+*[Tt]humbs.db
+*.DS_Store
