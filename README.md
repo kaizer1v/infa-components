@@ -4,6 +4,8 @@ A bootstrap like library, written as a jquery plugin, which is used for internal
 
 ## Installation
 
+After cloning this repository, run the following commands.
+
 ```bash
 npm install
 npm run grunt
