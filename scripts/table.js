@@ -14,13 +14,8 @@ $(".task-row td input[type=search]").keyup(function() {
 	})
 });
 
-// Searching through Date type field
-// $(".task-row td input[type=date]").on("change", function() {
-	// selectedDate = typeof $(this).val().split("-")
-// });
 
 // Searching through dropdown
-
 
 /* Table Sorting */
 function TableSort(id) {
@@ -92,37 +87,6 @@ TableSort.prototype.sortCol = function(el) {
 
 	}
 	
-	/*
-	var col = [], top, bottom;
-	if(th.className.match("asc")) {
-		top = bubblesort(alpha, -1)
-		bottom = bubblesort(numeric, -1)
-		th.className = th.className.replace(/asc/, "dsc")
-	} else {
-		top = bubblesort(numeric, 1)
-		bottom = bubblesort(alpha, 1)
-		
-		if(th.className.match("dsc")) {
-			th.className = th.className.replace(/dsc/, "asc")
-		} else {
-			th.className += "asc"
-		}
-	}
-
-	if(this.lastSortedTh && th != this.lastSortedTh) {
-		this.lastSortedTh.className = this.lastSortedTh.className.replace(/dsc|asc/g, "")
-	}
-	this.lastSortedTh = th;
-
-
-	col = top.concat(bottom);
-	var tBody = this.tbl.tBodies[0];
-	console.log(tBody)
-	for(var i=0; col[i]; i++) {
-		tBody.appendChild(col[i].rows)
-	}
-	*/
-	
 } // END sortCol
 
 
@@ -176,7 +140,7 @@ function customSort(arr, dir) {
 }
 
 
-myArr = [
+var myArr = [
 	{
 		rows: 0,
 		value: "91abc",
@@ -206,6 +170,3 @@ myArr = [
 		value: ".678"
 	},
 ]
-
-
-// console.log(customSort(myArr, 1))

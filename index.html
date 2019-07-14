@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
+
 <head>
   <title>Informatica Component Library</title>
-
   <link type="text/css" rel="stylesheet" href="dist/css/informatica.css" />
   <style>
     .section {
@@ -27,15 +27,15 @@
       margin: 5px;
     }
   </style>
-  
-  
 </head>
+
 <body style="margin-top: 40px">
   <header>
     <table class="headerbar fixed-top">
       <tr>
         <td width="140px"><img src="./images/infa-logo.png" alt="Informatica" /></td>
-        <td width="80px" class="dropdown"><!-- Here the td itself can act as .dropdown -->
+        <td width="80px" class="dropdown">
+          <!-- Here the td itself can act as .dropdown -->
           <a class="dropdown-link" href="#">Component<span class="icon icon-carat"></span></a>
           <ul class="dropdown-menu">
             <li class="dropdown-menu-header text-infa-orange">Scaffolding / Basic</li>
@@ -47,19 +47,16 @@
             <li><a href="#icons"><span class="icon icon-asset"></span>Icons</a></li>
             <li><a href="#tables">Tables</a></li>
             <li><a href="#dropdowns">Dropdowns</a></li>
-            
             <hr class="divider" />
             <li class="dropdown-menu-header text-infa-orange">Bars</li>
             <li><a href="#headerbar">Headerbar</a></li>
             <li><a href="#titlebar">Titlebar</a></li>
             <li><a href="#tabs">Tabs</a></li>
             <li><a href="#modal">Modal</a></li>
-            
             <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
             <li><a href="#">Another Item</a></li>
             <li><a href="#">Just a link</a></li>
             <li>No hyperlink</li>
-            
             <hr class="divider" />
             <li class="dropdown-menu-header">Menu Header</li>
             <li><a href="#">Just a link</a></li>
@@ -76,12 +73,10 @@
       </tr>
     </table>
   </header>
-  
   <div id="component_container" class="clearfix scrollable">
-  
     <div id="primary-tabs" class="tabs-container">
       <ul class="tabs">
-        <li><a href="#typography" class="infa-green" data-toggle="tab">Typography</a></li>
+        <li class="active"><a href="#typography" class="infa-green" data-toggle="tab">Typography</a></li>
         <li><a href="#grids" data-toggle="tab">Grids</a></li>
         <li><a href="#form_elements" data-toggle="tab">Form Elements</a></li>
         <li><a href="#buttons" data-toggle="tab">Buttons</a></li>
@@ -95,28 +90,185 @@
         <li><a href="#boxes" data-toggle="tab">Boxes</a></li>
         <li><a href="#wizard" data-toggle="tab">Wizard</a></li>
         <li><a href="#modal" data-toggle="tab">Modal</a></li>
-        <li class="active"><a href="#accordian" data-toggle="tab">Accordians</a></li>
+        <li><a href="#accordian" data-toggle="tab">Accordians</a></li>
         <li><a href="#tree" data-toggle="tab">Tree</a></li>
         <li><a href="#shuttle" data-toggle="tab">Shutte</a></li>
       </ul>
-
       <!-- Tab panes -->
       <div class="tabs-content">
-        <div class="tabs-pane" id="typography">
+        <div class="tabs-pane active" id="typography">
           <h1>Typography</h1>
-          <div w3-include-html="dist/components/typography.html"></div>
+          <div class="sub-section">
+            <h4>Sub-section: Headings</h4>
+            <h1 class="heading-1">Heading 1</h1>
+            <h2 class="heading-2">Heading 2</h2>
+            <h3 class="heading-3">Heading 3</h3>
+            <h4 class="heading-4">Heading 4</h4>
+            <h5 class="heading-5">Heading 5</h5>
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Other Types of Text</h4>
+            <p class="text-disabled">Disabled Text. Lorem Ipsum.. asdfas aef</p>
+            <p class="title">this is a title text</p>
+            <p class="sub-title">this is a title text</p>
+            <p class="text-bold">apply <span>.text-bold</span> to see text in bold</p>
+            <p class="text-center">Center Alignned</p>
+            <p class="text-right">right Alignned</p>
+            <p class="text-left">left Alignned</p>
+            <p class="text-infa-green">coloured text</p>
+            <p class="text-infa-lblue">coloured text</p>
+            <p class="text-infa-dblue">coloured text</p>
+            <p class="text-infa-gray">coloured text</p>
+            <p class="text-infa-red">coloured text</p>
+            <p>Big Number</p>
+            <p class="text-big-number text-infa-lblue">294</p>
+            <p>Medium Number</p>
+            <p class="text-medium-number">294</p>
+            <p>This is a paragraph</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
-      
         <div class="tabs-pane" id="grids">
           <h1>Grids</h1>
-          <?php require "components/grids.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Simple Grids</h4>
+            <div class="container">
+              <div class="col col-2" style="height: 20px; background: #ccc;">col-2</div>
+              <div class="col col-3" style="height: 20px; background: #eee;">col-3</div>
+            </div>
+            <div class="container">
+              <div class="col col-4" style="height: 20px; background: #ccc;">col-4</div>
+              <div class="col col-1" style="height: 20px; background: #eee;">col-1</div>
+            </div>
+            <div class="container">
+              <div class="col col-1" style="height: 20px; background: #ccc;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #eee;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #ccc;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #eee;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #ccc;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #eee;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #ccc;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #eee;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #ccc;">col-1</div>
+              <div class="col col-1" style="height: 20px; background: #eee;">col-1</div>
+            </div>
+            <h4>Sub-section: Grids inside other grids</h4>
+            <div class="container">
+              <div class="col col-2" style="background: #ccc;">
+                <div class="col col-5" style="height: 20px; background: blue;">col-5 inside col-2</div>
+                <div class="col col-5" style="height: 20px; background: red;">col-5 inside col-2</div>
+              </div>
+              <div class="col col-8" style="background: #eee;">
+                <div class="col col-6" style="height: 20px; background: blue;">col-6 inside col-8</div>
+                <div class="col col-4" style="height: 20px; background: red;">col-4 inside col-8</div>
+              </div>
+            </div>
+          </div>
         </div>
-      
         <div class="tabs-pane" id="form_elements">
           <h1>Form Elements</h1>
-          <?php require "components/form.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Text boxs, Password box</h4>
+            <table class="infa-table" style="width: 50%">
+              <thead>
+                <tr>
+                  <th>Tag Type</th>
+                  <th>Form Elements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>input[type=text]</code></td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=text]</code> with placeholder</td>
+                  <td><input type="text" placeholder="type something here.." /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=text]</code> with a label</td>
+                  <td><label>I am a label</label><input type="text" placeholder="textbox with a label.." /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=email]</code></td>
+                  <td>
+                    <form><input type="email" placeholder="Enter Email" pattern='/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' /></form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>input[type=password]</code></td>
+                  <td><input type="password" placeholder="Enter password" /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=number]</code></td>
+                  <td>
+                    <form><input type="number" placeholder="Enter Number" min="0" value="2" max="10" step="2" pattern="[0-9]" /></form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>input[type=tel]</code></td>
+                  <td><input type="tel" placeholder="Enter Telephone Number" value="999-99-99" /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=date]</code></td>
+                  <td><input type="date" placeholder="Enter Date" /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=time]</code></td>
+                  <td><input type="time" placeholder="Enter time" /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=range]</code></td>
+                  <td><input type="range" placeholder="Enter Number" value="3" /></td>
+                </tr>
+                <tr>
+                  <td><code>textarea</code></td>
+                  <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                  <td>Disabled Textbox</td>
+                  <td><input type="text" placeholder="I am disabled" disabled /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=submit]</code></td>
+                  <td><input type="submit" value="I am a submit button" /></td>
+                </tr>
+                <tr>
+                  <td><code>input[type=file]</code></td>
+                  <td><input type="file" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Checkboxes and Radio Boxes</h4>
+            <div class="component">
+              <input type="checkbox" name="checkbox1">Option 1
+              <input type="checkbox" name="checkbox1">Option 2
+              <input type="checkbox" name="checkbox1">Option 3
+              <input type="checkbox" name="checkbox1">Option 4
+            </div>
+            <div class="component">
+              <input type="radio" name="radiobox1">Option 1
+              <input type="radio" name="radiobox1">Option 2
+              <input type="radio" name="radiobox1">Option 3
+              <input type="radio" name="radiobox1">Option 4
+            </div>
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Select</h4>
+            <div class="component">
+              <select>
+                <option>BMW</option>
+                <option>Benz</option>
+                <option>Volvo</option>
+                <option>Maseratti</option>
+                <option>Tesla</option>
+              </select>
+            </div>
+          </div>
         </div>
-      
         <div class="tabs-pane" id="buttons">
           <h1>Buttons</h1>
           <div class="sub-section">
@@ -190,42 +342,1113 @@
             </table>
           </div>
         </div>
-      
         <div class="tabs-pane" id="lists">
           <h1>Lists</h1>
-          <?php require "components/lists.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Simple Lists</h4>
+            <div class="component">
+              <ul class="infa-list">
+                <li>Single List Item</li>
+                <li><a href="#">List Item Anchor</a></li>
+                <li><a href="#"><span class="icon icon-asset"></span>List Item Anchored with Icon</a></li>
+                <li class="selected"><a href="#">List Item Selected with anchor</a></li>
+              </ul>
+              <ul class="infa-list">
+                <li>Single List Item</li>
+                <li><a href="#">List Item Anchor</a></li>
+                <li><a href="#"><span class="icon icon-asset"></span>List Item Anchored with Icon</a></li>
+                <li class="selected">List Item Selected</li>
+              </ul>
+            </div><!-- END .component -->
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Searchable List</h4>
+            <div class="component">
+              <input id="txt_search_list" type="search" placeholder="Search List" search_id="searchable_list" />
+              <ul id="searchable_list" class="infa-list">
+                <li><input type="radio" value="Single List Item" name="radio_list" />Single List Item</li>
+                <li><a href="#"><input type="radio" name="radio_list" />List Item Anchor</a></li>
+                <li><a href="#"><input type="radio" name="radio_list" /><span class="icon icon-asset"></span>List Item Anchored with Icon</a></li>
+                <li class="selected"><a href="#"><input type="radio" name="radio_list" />List Item Selected with anchor</a></li>
+              </ul>
+            </div><!-- END .component -->
+          </div>
         </div>
-        
         <div class="tabs-pane" id="icons">
           <h1>Icons</h1>
-          <?php require "components/icons.php"; ?>
+          <div class="sub-section">
+            <h4>Sub Section: All Menu Icons</h4>
+            <p>These icons are sized 16x16 px</p>
+            <table class="infa-table" id="table-icons" style="width: 30%">
+              <thead>
+                <tr>
+                  <th width="25%">Class Name</th>
+                  <th width="10%">Icon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>icon-folder-open</code></td>
+                  <td><span class="icon icon-folder-open"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-folder-closed</code></td>
+                  <td><span class="icon icon-folder-closed"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-asset</code></td>
+                  <td><span class="icon icon-asset"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-glossary</code></td>
+                  <td><span class="icon icon-glossary"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-category</code></td>
+                  <td><span class="icon icon-category"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-policy</code></td>
+                  <td><span class="icon icon-policy"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-data-domain-group</code></td>
+                  <td><span class="icon icon-data-domain-group"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-business-applications</code></td>
+                  <td><span class="icon icon-business-applications"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-synonym</code></td>
+                  <td><span class="icon icon-synonym"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-data-domain</code></td>
+                  <td><span class="icon icon-data-domain"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-connection</code></td>
+                  <td><span class="icon icon-connection"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-pie-chart</code></td>
+                  <td><span class="icon icon-pie-chart"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-discovery-profile</code></td>
+                  <td><span class="icon icon-discovery-profile"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-columns</code></td>
+                  <td><span class="icon icon-columns"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-schema</code></td>
+                  <td><span class="icon icon-schema"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-view</code></td>
+                  <td><span class="icon icon-view"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-mapplet</code></td>
+                  <td><span class="icon icon-mapplet"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-mapping-spec</code></td>
+                  <td><span class="icon icon-mapping-spec"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-reference-table</code></td>
+                  <td><span class="icon icon-reference-table"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-definition</code></td>
+                  <td><span class="icon icon-definition"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-scorecard</code></td>
+                  <td><span class="icon icon-scorecard"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-project</code></td>
+                  <td><span class="icon icon-project"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-function</code></td>
+                  <td><span class="icon icon-function"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-action</code></td>
+                  <td><span class="icon icon-action"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-search</code></td>
+                  <td><span class="icon icon-search"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-refresh</code></td>
+                  <td><span class="icon icon-refresh"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-bin</code></td>
+                  <td><span class="icon icon-bin"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-cross</code></td>
+                  <td><span class="icon icon-cross"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-cross-small</code></td>
+                  <td><span class="icon icon-cross-small"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-warning</code></td>
+                  <td><span class="icon icon-warning"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-clear-filter</code></td>
+                  <td><span class="icon icon-clear-filter"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-help</code></td>
+                  <td><span class="icon icon-help"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-flag</code></td>
+                  <td><span class="icon icon-flag"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-calendar</code></td>
+                  <td><span class="icon icon-calendar"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-cross-circle</code></td>
+                  <td><span class="icon icon-cross-circle"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-arrow</code></td>
+                  <td><span class="icon icon-arrow"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-arrow-right</code></td>
+                  <td><span class="icon icon-arrow-right"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-arrow-left</code></td>
+                  <td><span class="icon icon-arrow-left"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-arrow-closed</code></td>
+                  <td><span class="icon icon-arrow-closed"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-arrow-open</code></td>
+                  <td><span class="icon icon-arrow-open"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-status-pass</code></td>
+                  <td><span class="icon icon-status-pass"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-status-fail</code></td>
+                  <td><span class="icon icon-status-fail"></span></td>
+                </tr>
+                <tr>
+                  <td><code>icon-status-not-tested</code></td>
+                  <td><span class="icon icon-status-not-tested"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      
         <div class="tabs-pane" id="tables">
           <h1>Grid View / Tables</h1>
-          <?php require "components/tables.php"; ?>
+          <div class="sub-section" id="grid_view">
+            <p>A grid view is a panel view designed to present tabular data in columns and rows. Grid views have several optional features which may be enabled or disabled as appropriate for the particular use case. These include column sorting, column resizing, column reordering, column customization, row numbering, row selection, grouping, pagination, and inline editing.</p>
+            <div class="sub-section">
+              <h2>Goals</h2>
+              <p>Users need the ability to view, interact with, and edit tabular data in rows and columns.</p>
+              <h2>Solutions</h2>
+              <ul class="listitems">
+                <li class="text">Typically, the columns of a grid view represent the data’s common attributes or fields and the
+                  rows of a grid view represent individual records of data.</li>
+                <li class="text">A row of column headers appears at the top of the grid view. Each column header contains a label
+                  that describes the data in that column. If column customization and/or grouping are enabled, then rolling over a
+                  column header with the mouse will cause a menu icon to appear on its right side. Clicking this icon will open a
+                  column menu containing a list of available actions.</li>
+                <li class="text">By default, the columns of a grid view should be of an appropriate width so that neither the
+                  column labels nor the data are truncated but the space between columns is not excessive.
+                </li>
+                <li class="text">If either the column label or the data are truncated due to an insufficiently wide column, then
+                  ellipses will appear at the end of the visible text. Rolling over a truncated column label or value will display
+                  a tooltip containing the entire value.</li>
+                <li class="text">The rows of a grid view feature zebra striping to facilitate the viewing of data. Odd-numbered
+                  rows are white and even-numbered rows are lightly shaded. Empty areas of the grid to the right of the last
+                  column or underneath the last row are not zebra striped. There are no visible borders between columns.</li>
+                <li class="text">Horizontal and/or vertical scrollbars appear when necessary. The vertical scrollbar appears
+                  underneath the row of column headers.</li>
+                <li class="text">If there is no data to display in a grid, then a message view should appear in place of the grid view
+                  to explain why there are no data and what the user can do about it.</li>
+                <ul class="listitems">
+                  <li class="listheading">Column Sorting</li>
+                  <li class="text">When <strong>column sorting</strong> is enabled in a grid view, clicking a column header will
+                    sort the grid data by that column in ascending order. An ascending sort icon will appear to the right of the
+                    column label. If the grid data is already sorted by that column in ascending order, then clicking the column
+                    header will sort the data in descending order. A descending sort icon will appear to the right of the column
+                    label.</li>
+                </ul>
+              </ul>
+              <div class="component">
+                <table class="infa-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Desc</th>
+                      <th>Something Else</th>
+                      <th>Something Else that is quite long</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Italy</td>
+                      <td>Capital is </td>
+                      <td>Lorem ipsum asdf fape a</td>
+                      <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                    </tr>
+                    <tr>
+                      <td>Italy</td>
+                      <td>Capital is </td>
+                      <td>Lorem ipsum asdf fape a</td>
+                      <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                    </tr>
+                    <tr>
+                      <td>Italy</td>
+                      <td>Capital is </td>
+                      <td>Lorem ipsum asdf fape a</td>
+                      <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                    </tr>
+                    <tr>
+                      <td>Italy</td>
+                      <td>Capital is </td>
+                      <td>Lorem ipsum asdf fape a</td>
+                      <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="sub-section">
+              <h2>Column Sorting</h2>
+              <ul>
+                <li>When column sorting is enabled in a grid view, clicking a column header will sort the grid data by that column in ascending order. An ascending sort icon will appear to the right of the column label. If the grid data is already sorted by that column in ascending order, then clicking the column header will sort the data in descending order. A descending sort icon will appear to the right of the column label.</li>
+                <li class="text">If column customization and/or grouping are enabled, then users may also sort the data by a particular column by selecting the <em>Sort Ascending</em> or <em>Sort Descending</em> action from its column menu. If column sorting is disabled, then these actions do not appear in the column menus.</li>
+                <li class="text">Column sorting must always take the entire set of grid rows into account, not just the subset
+                  of grid rows visible on the current page. UI designers should take the processing time into account when
+                  choosing whether to enable column sorting for a particular grid view.</li>
+                <li class="text">When specified by the UI designer, column sorting should be sticky across sessions. To achieve
+                  this, the user’s most recent sort order can be saved locally using a cookie.</li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <h2>Column Resizing</h2>
+              <ul>
+                <li class="text">When <strong>column resizing</strong> is enabled, rolling the mouse over the border between two
+                  column headers will display the horizontal resize pointer.
+                </li>
+                <li class="text">The user may then click and drag the border in order to resize the column. While the user is
+                  dragging the border, a vertical line appears within the grid to illustrate the new position of the border when
+                  the user releases the mouse button.</li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <h2>Column Reordering</h2>
+              <ul>
+                <li class="text">When <strong>column reordering</strong> is enabled, users may drag a column header and drop it at the desired location.</li>
+                column headers will display the horizontal resize pointer.
+                </li>
+                <li class="text">While the user is dragging, a ghost column header appears under the mouse pointer.</li>
+                <li class="text">When specified by the UI designer, column reordering should be sticky across sessions. To
+                  achieve this, the user’s most recent column order can be saved locally using a cookie.
+                </li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <h2>Column customization</h2>
+              <ul>
+                <li class="text">When <strong>column customization</strong> is enabled, users may hide and show columns by
+                  selecting the <em>Columns</em> item from any column menu. Selecting <em>Columns</em> opens a cascading
+                  menu containing a list of available columns preceded by checkboxes. Unchecking columns hides them and
+                  checking columns shows them.</li>
+                <li class="text">When column customization is disabled, the <em>Columns</em> item does not appear in the
+                  column menus.</li>
+                <li class="text">When specified by the UI designer, column customization should be sticky across sessions.
+                  To achieve this, the user’s most recent column customizations can be saved locally using a cookie.</li>
+                <li class="text">UI designers may specify that infrequently used columns be hidden by default.</li>
+              </ul>
+            </div>
+            <div class="sub-section">
+              <h2>Column numbering</h2>
+              <ul>
+                <li class="text">When <strong>row numbering</strong> is enabled, row numbers appear to the left of the first
+                  column. These numbers are attached to the left side of the panel and remain visible when a user scrolls
+                  horizontally through the data.</li>
+                <li class="text">When <strong>row numbering</strong> is enabled, row numbers appear to the left of the first
+                  column. These numbers are attached to the left side of the panel and remain visible when a user scrolls
+                  horizontally through the data.</li>
+                <li class="text">Row numbering is not appropriate for most grid views. Row numbering is most appropriate for
+                  grid views that allow users to preview the data in a source such as a relational table or flat file.</li>
+                <li class="text">In some cases, it may be more appropriate to have an actual data column of line numbers than
+                  to enable the row numbering feature of the grid view. This allows the user to return the data to its original
+                  order by sorting by the column of line numbers.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Table</h4>
+            <div class="component">
+              <table class="infa-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>Something Else</th>
+                    <th>Something Else that is quite long</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>Sub-section: Grouped By Table</h4>
+            <div class="component">
+              <table class="infa-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>Something Else</th>
+                    <th>Something Else that is quite long</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                </tbody>
+                <tr>
+                  <td colspan="4">asdf</td>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>Sub-section: Table Stiped</h4>
+            <div class="component">
+              <table class="infa-table-striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>Something Else</th>
+                    <th>Something Else that is quite long</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                  <tr>
+                    <td>Italy</td>
+                    <td>Capital is </td>
+                    <td>Lorem ipsum asdf fape a</td>
+                    <td>Lorem ipsum asdf fape a asdf vherja a;lesd</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>Sub-section: Table Header</h4>
+            <div class="component">
+              <table class="infa-table">
+                <tr>
+                  <td><b>897</b> Business Terms</td>
+                  <td width="60px"><label>Sort By:</label></td>
+                  <td width="100px">
+                    <select>
+                      <option>Name</option>
+                    </select>
+                  </td>
+                  <td width="80px"><label>Group By:</label></td>
+                  <td width="100px">
+                    <select>
+                      <option>None</option>
+                    </select>
+                  </td>
+                  <td width="60px" class="border-left">
+                    <button class="btn-active">Filter</button>
+                  </td>
+                </tr>
+              </table>
+            </div><!-- END of component -->
+            <h4>Sub-section: Table Task Header</h4>
+            <div class="component">
+              <table id="myTable" class="infa-table">
+                <caption>This is the table Caption</caption>
+                <thead>
+                  <tr>
+                    <th width="10px">&gt;</th>
+                    <th width="10px"></th>
+                    <th width="240px">Date</th>
+                    <th width="25%">Team A</th>
+                    <th width="20px">Goals</th>
+                    <th width="20px">Goals</th>
+                    <th width="25%">Team B</th>
+                    <th>Group</th>
+                    <!--<th>Scorers</th>-->
+                  </tr>
+                  <!-- Task Row -->
+                  <tr class="task-row">
+                    <td>&nbsp;</td>
+                    <td><span class="icon icon-asset"></span></td>
+                    <td><input type="date" /><span class="icon icon-calendar"></span></td>
+                    <td><input type="search" placeholder="Search Team..." /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" placeholder="Search Team..." /></td>
+                    <td>
+                      <select>
+                        <option>
+                          </optons>
+                        <option>Group A</optons>
+                        <option>Group B</optons>
+                        <option>Group C</optons>
+                        <option>Group D</optons>
+                        <option>Group E</optons>
+                        <option>Group F</optons>
+                        <option>Group G</optons>
+                        <option>Group H</optons>
+                      </select>
+                    </td>
+                    <!--<td><input type="search" placeholder="Search Team..." /></td>-->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>12th June</td>
+                    <td>$11.5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>Croatia</td>
+                    <td>Group A</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>13th June</td>
+                    <td><a href="#">Mexico</a></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>Cameroon</td>
+                    <td>Group A</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>13th June</td>
+                    <td>Spain</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>Netherlands</td>
+                    <td>Group B</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>13th June</td>
+                    <td>55</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>Australia</td>
+                    <td>Group B</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>14th June</td>
+                    <td>Colombia</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>Greece</td>
+                    <td>Group C</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>16th June</td>
+                    <td>Germany</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>Portugal</td>
+                    <td>Group G</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>18th June</td>
+                    <td>Spain</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>Chile</td>
+                    <td>Group G</td>
+                    <!--<td></td>-->
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td><input type="checkbox" /></td>
+                    <td>23rd June</td>
+                    <td>Brazil</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>Cameroon</td>
+                    <td>Group A</td>
+                    <!--<td></td>-->
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- END of component -->
+            <h4>Sub-section: Table Header</h4>
+            <div class="component">
+              <table class="infa-table">
+                <tr>
+                  <td><b>897</b> Business Terms</td>
+                  <td width="60px"><label>Sort By:</label></td>
+                  <td width="100px">
+                    <select>
+                      <option>Name</option>
+                    </select>
+                  </td>
+                  <td width="80px"><label>Group By:</label></td>
+                  <td width="100px">
+                    <select>
+                      <option>None</option>
+                    </select>
+                  </td>
+                  <td width="60px" class="border-left">
+                    <button class="btn-active">Filter</button>
+                  </td>
+                </tr>
+              </table>
+            </div><!-- END of component -->
+            <h4>Sub-section: Form Table</h4>
+            <div class="component">
+              <table class="infa-form-table">
+                <thead>
+                  <tr>
+                    <th colspan="2">This is the form title. A really long title</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">*This is a note</td>
+                  </tr>
+                </thead>
+                <tbody class="form-section">
+                  <tr>
+                    <td class="form-section-title">General</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Name*</td>
+                    <td><input type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td>Description*</td>
+                    <td><textarea></textarea></td>
+                  </tr>
+                  <tr class="form-divider">
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>A radio Option</td>
+                    <td>
+                      <input type="radio" name="form_options" />Option 1<br />
+                      <input type="radio" name="form_options" />Option 2<br />
+                      <input type="radio" name="form_options" />Option 3<br />
+                      <input type="radio" name="form_options" />Option 4<br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Select Options</td>
+                    <td>
+                      <select>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody class="form-section">
+                  <tr>
+                    <td width="100px"><b>Project Status</b></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Form field with icon</td>
+                    <td><input type="search" placeholder="Search here..." /><span class="icon icon-asset"></span></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- END of component -->
+          </div>
         </div>
-      
         <div class="tabs-pane" id="dropdowns">
           <h1>Dropdowns</h1>
-          <?php require "components/dropdown.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Navigation Dropdowns</h4>
+            <div class="component">
+              <div class="container">
+                <div class="col col-2">
+                  <ul class="dropdown-menu" style="display: block !important; position: relative !important;">
+                    <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                    <li><a href="#">Sub menu item 1</a></li>
+                    <li><a href="#">Another Item</a></li>
+                    <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                    <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                    <li class="disabled">Disabled Link</li>
+                    <hr class="divider" />
+                    <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                    <li><a href="#">Another Item</a></li>
+                    <li><a href="#">Just a link</a></li>
+                    <li>No hyperlink</li>
+                    <hr class="divider" />
+                    <li class="dropdown-menu-header">Menu Header</li>
+                    <li><a href="#">Just a link</a></li>
+                    <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                  </ul>
+                </div>
+              </div><!-- END .container -->
+              <table class="infa-table" style="width: 50%">
+                <thead>
+                  <tr>
+                    <th>Testing Sub Menus inside dropdowns</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Submenu</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-link">Dropdown<span class="icon icon-carat"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-menu-header">Menu Header</li>
+                          <li class="has-submenu">
+                            <a href="#">I have a Submenu<span class="icon icon-arrow-closed" style="float: right"></span></a>
+                            <ul class="dropdown-menu submenu">
+                              <li>Item 1</li>
+                              <li>Item 2</li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Just a link</a></li>
+                          <li class="has-submenu">
+                            <a href="#">I have a Submenu<span class="icon icon-arrow-closed" style="float: right"></span></a>
+                            <ul class="dropdown-menu submenu">
+                              <li>Item 1</li>
+                              <li>Item 2</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="infa-table" style="width: 50%">
+                <thead>
+                  <tr>
+                    <th>Class Name</th>
+                    <th>Dropdowns</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>.dropdown</code> as a div</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-link">Dropdown<span class="icon icon-carat"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                          <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                          <li class="disabled">Disabled Link</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#">Just a link</a></li>
+                          <li>No hyperlink</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header">Menu Header</li>
+                          <li><a href="#">Just a link</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.dropdown</code> as an icon</td>
+                    <td>
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-link"><span class="icon icon-action"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                          <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                          <li class="disabled">Disabled Link</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#">Just a link</a></li>
+                          <li>No hyperlink</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header">Menu Header</li>
+                          <li><a href="#">Just a link</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.dropdown</code> as a button</td>
+                    <td>
+                      <button class="dropdown">
+                        <a href="#" class="dropdown-link">Dropdown<span class="icon icon-carat"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                          <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                          <li class="disabled">Disabled Link</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#">Just a link</a></li>
+                          <li>No hyperlink</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header">Menu Header</li>
+                          <li><a href="#">Just a link</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        </ul>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>.dropdown</code> as a td. Here the <code>td</code> element <br /><br />is given a class of <code>.dropdown</code></td>
+                    <td class="dropdown">
+                      <a href="#" class="dropdown-link">Dropdown<span class="icon icon-carat"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                        <li><a href="#">Sub menu item 1</a></li>
+                        <li><a href="#">Another Item</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                        <li class="disabled">Disabled Link</li>
+                        <hr class="divider" />
+                        <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                        <li><a href="#">Another Item</a></li>
+                        <li><a href="#">Just a link</a></li>
+                        <li>No hyperlink</li>
+                        <hr class="divider" />
+                        <li class="dropdown-menu-header">Menu Header</li>
+                        <li><a href="#">Just a link</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>For <code>.dropdown</code> as a Tab, see Tabs section</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="infa-table">
+                <thead>
+                  <tr>
+                    <th>Testing Extreme Right dropdown</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>See Right</td>
+                    <td width="20px">
+                      <div class="dropdown dropdown-right">
+                        <a href="#" class="dropdown-link"><span class="icon icon-action"></span></a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                          <li><a href="#">Sub menu item 1</a></li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                          <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                          <li class="disabled">Disabled Link</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                          <li><a href="#">Another Item</a></li>
+                          <li><a href="#">Just a link</a></li>
+                          <li>No hyperlink</li>
+                          <hr class="divider" />
+                          <li class="dropdown-menu-header">Menu Header</li>
+                          <li><a href="#">Just a link</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--END of component -->
+          </div>
         </div>
-      
         <div class="tabs-pane" id="headerbar">
           <h1>HeaderBar</h1>
-          <?php require "components/headerbar.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Headerbar</h4>
+            <div class="component">
+              <header>
+                <table class="headerbar">
+                  <tr>
+                    <td width="140px"><img src="./images/infa-logo.png" alt="Informatica" /></td>
+                    <td width="50px" class="dropdown">
+                      <!-- Here the td itself can act as .dropdown -->
+                      <a class="dropdown-link" href="#">Link<span class="icon icon-carat"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                        <li><a href="#">Sub menu item 1</a></li>
+                        <li><a href="#">Another Item</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                        <li class="disabled">Disabled Link</li>
+                        <hr class="divider" />
+                        <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                        <li><a href="#">Another Item</a></li>
+                        <li><a href="#">Just a link</a></li>
+                        <li>No hyperlink</li>
+                        <hr class="divider" />
+                        <li class="dropdown-menu-header">Menu Header</li>
+                        <li><a href="#">Just a link</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                      </ul>
+                    </td>
+                    <td width="100px"><a href="#">Simple Link</a></td>
+                    <td><input type="search" placeholder="Search All" style="width: 40%" /></td>
+                    <td width="20px"><span class="icon icon-flag"></span></td>
+                    <td width="80px"><a href="#">Manage</a></td>
+                    <td width="100px"><a href="#">Username</a></td>
+                    <td width="30px"><span class="icon icon-help"></span></td>
+                    <td width="50px"><span class="icon icon-help"></span></td>
+                  </tr>
+                </table>
+              </header>
+            </div><!-- END of component -->
+          </div>
         </div>
-      
         <div class="tabs-pane" id="titlebar">
           <h1>TitleBar</h1>
-          <?php require "components/titlebar.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Titlebar with dropdown</h4>
+            <div class="component">
+              <table class="infa-table">
+                <tr>
+                  <td class="dropdown title">
+                    <a href="#" class="dropdown-link">Title Bar<span class="icon icon-carat"></span></a>
+                  </td>
+                  <td width="30px"><button>Edit</button></span></td>
+                  <td width="20px"><span class="icon icon-action"></span></td>
+                  <td width="20px" class="border-left"><span class="icon icon-action"></span></td>
+                </tr>
+              </table><!-- END .titlebar -->
+            </div><!-- END of component -->
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Titlebar with Icon</h4>
+            <div class="component">
+              <table class="infa-table">
+                <tr>
+                  <td width="20px"><span class="icon icon-asset"></span></td>
+                  <td class="title">Title Bar</td>
+                  <td width="30px"><button>Edit</button></span></td>
+                  <td width="20px"><span class="icon icon-action"></span></td>
+                  <td width="20px" class="border-left"><span class="icon icon-action"></span></td>
+                </tr>
+              </table><!-- END .titlebar -->
+            </div><!-- END of component -->
+          </div>
+          <div class="sub-section">
+            <h4>Sub-section: Description Bar</h4>
+            <div class="component">
+              <table class="infa-table infa-descriptionbar">
+                <tr>
+                  <td class="description-text">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat</p>skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,</p>
+                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                  </td>
+                  <td></td>
+                  <td class="description-stats" width="100px">
+                    <span class="icon icon-user .center-me"></span>
+                    <p>Kim Smith</p>
+                  </td>
+                  <td class="description-stats" width="80px">
+                    <p class="text-big-number text-infa-green">7</p>
+                    <p>Related Terms</p>
+                  </td>
+                  <td class="description-stats" width="80px">
+                    <p class="text-big-number text-infa-green">5</p>
+                    <p>Data Assets</p>
+                  </td>
+                  <td class="description-stats" width="80px">
+                    <p class="text-big-number text-infa-green">55</p>
+                    <p>Comments</p>
+                  </td>
+                </tr>
+              </table><!-- END .descriptionbar -->
+            </div><!-- END of component -->
+          </div>
         </div>
-      
-        <div class="tabs-pane" id="tabs">
+        <div class=" tabs-pane" id="tabs">
           <h1>Tabs</h1>
-          <?php require "components/tabs.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Tabs</h4>
+            <div class="component">
+              <!-- Nav tabs -->
+              <div id="primary-tabs" class="tabs-container">
+                <ul class="tabs">
+                  <li><a href="#tab1">Active tab</a></li>
+                  <li class="active"><a href="#tab2" class="infa-green">A Green Tab</a></li>
+                  <li><a href="#tab3" class="infa-orange">An Orange Tab</a></li>
+                  <li><a href="#tab4">Just another tab</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-link" href="#tab4">Tab with a dropdown<span class="icon icon-carat"></span></a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                      <li><a href="#">Sub menu item 1</a></li>
+                      <li><a href="#">Another Item</a></li>
+                      <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                      <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                      <li class="disabled">Disabled Link</li>
+                      <hr class="divider" />
+                      <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                      <li><a href="#">Another Item</a></li>
+                      <li><a href="#">Just a link</a></li>
+                      <li>No hyperlink</li>
+                      <hr class="divider" />
+                      <li class="dropdown-menu-header">Menu Header</li>
+                      <li><a href="#">Just a link</a></li>
+                      <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tabs-content">
+                  <div class="tabs-pane active" id="tab1">Active Tab Content</div>
+                  <div class="tabs-pane" id="tab2">chal.. kalti maaar yaahan se...</div>
+                  <div class="tabs-pane" id="tab3">abracadabra</div>
+                  <div class="tabs-pane" id="tab4">I'll be back</div>
+                  <div class="tabs-pane" id="tab4">Tab with dropdown content...</div>
+                </div>
+              </div>
+            </div><!-- END of component -->
+          </div>
         </div>
-      
         <div class="tabs-pane" id="boxes">
           <h1>Boxes</h1>
           <div class="sub-section">
@@ -279,53 +1502,337 @@
             </div><!-- END of component -->
           </div>
         </div>
-      
         <div class="tabs-pane" id="wizard">
           <h1>Wizard</h1>
-          <?php require "components/wizard.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Wizard</h4>
+            <div class="component">
+              <div id="my-wizard" class="infa-wizard">
+                <table class="wizard-actions">
+                  <thead>
+                    <tr>
+                      <th width="20px"><span class="icon icon-asset"></span></th>
+                      <th class="title">Wizard Title</th>
+                      <th width="30px"><button class="btn-prev disabled">Back</button></th>
+                      <th width="30px"><button class="btn-next">Next</button></th>
+                      <th width="30px"><button class="active">Save</button></th>
+                      <th width="30px"><button class="btn-cancel">Cancel</button></th>
+                    </tr>
+                  </thead>
+                </table>
+                <!-- Wizard Steps -->
+                <table class="wizard-steps">
+                  <thead>
+                    <tr>
+                      <td width="70px" class="active"><a href="#step1"><span class="icon icon-notif-number">1</span>Step 1</a></td>
+                      <td width="70px"><a href="#step2"><span class="icon icon-notif-number">2</span>Step 2</a></td>
+                      <td width="70px"><a href="#step3"><span class="icon icon-notif-number">3</span>Step 3</a></td>
+                      <td width="70px"><a href="#step4"><span class="icon icon-notif-number">4</span>Step 4</a></td>
+                      <td width="70px"><a href="#step5"><span class="icon icon-notif-number">5</span>Step 5</a></td>
+                      <td width="70px"><a href="#step6"><span class="icon icon-notif-number">6</span>Step 6</a></td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                </table>
+                <!-- Wizard Content -->
+                <div class="wizard-content">
+                  <div class="wizard-pane active" id="step1">Step 1</div>
+                  <div class="wizard-pane" id="step2">Step 2. Finish this step and click Next.</div>
+                  <div class="wizard-pane" id="step3">This is step 3.</div>
+                  <div class="wizard-pane" id="step4">Finish this step and go to the next.</div>
+                  <div class="wizard-pane" id="step5">Step 5</div>
+                  <div class="wizard-pane" id="step6">Final Step. Fin.</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      
         <div class="tabs-pane" id="modal">
           <h1>Modal Window</h1>
-          <?php require "components/modal.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-Section: Working Modal</h4>
+            <div class="component">
+              <button class="modal-launch btn-primary">Launch Modal</button>
+              <div class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-title">I am the title</div>
+                  <div class="modal-content">
+                    <div class="box">
+                      <table class="infa-table">
+                        <tbody>
+                          <tr>
+                            <td class="dropdown title">Box Title Comes here</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="box-content">
+                        <p>Access the <span class="text-infa-green text-bold">Glossary</span> workspace to manage Glossary assets. Click one of the following options to create a new asset in the workspace:</p>
+                        <ul class="infa-list">
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer"><button class="modal-close">Close</button></div>
+                </div>
+              </div>
+            </div><!-- END of component -->
+            <div class="component">
+              <a href="#" class="modal-launch">Launch Modal</a>
+              <div class="modal">
+                <div class="modal-dialog">
+                  <button class="modal-close top">Close</button>
+                  <div class="modal-title">I am the title</div>
+                  <div class="modal-content">
+                    <div class="box">
+                      <table class="infa-table">
+                        <tbody>
+                          <tr>
+                            <td class="dropdown title">Box Title Comes here</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="box-content">
+                        <p>Access the <span class="text-infa-green text-bold">Glossary</span> workspace to manage Glossary assets. Click one of the following options to create a new asset in the workspace:</p>
+                        <ul class="infa-list">
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                          <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">I am the footer</div>
+                </div>
+              </div>
+            </div><!-- END of component -->
+          </div>
         </div>
-      
-        <div class="tabs-pane active" id="accordian">
+        <div class="tabs-pane" id="accordian">
           <h1>Accordian</h1>
-          <?php require "components/collapse.php"; ?>
+          <div class="sub-section">
+            <h4>Sub-section: Accordions</h4>
+            <div class="component">
+              <a href="#" id='blah' title="hey there I am here..">I am a tooltip exp!</a>
+              <div class="panel-group col col-3" id="accordion" style="height: 400px;">
+                <div class="panel">
+                  <table class="infa-table">
+                    <tr>
+                      <td class="panel-title">Panel 1</td>
+                    </tr>
+                  </table>
+                  <div class="panel-content">
+                    <table class="tree">
+                      <tr>
+                        <td class="tree-active"><a href="#">Business Terms</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">Categories</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">Data Objects</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">Glossaries</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">Mapping Specifications</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">Policies</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel active">
+                  <table class="infa-table">
+                    <tr>
+                      <td class="panel-title">Panel 2</td>
+                    </tr>
+                  </table>
+                  <div class="panel-content">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+                <div class="panel">
+                  <table class="infa-table">
+                    <tr>
+                      <td class="panel-title">Panel 3</td>
+                    </tr>
+                  </table>
+                  <div class="panel-content">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div><!-- ENd collapse -->
+            </div><!-- END of component -->
+          </div>
         </div>
-      
         <div class="tabs-pane" id="tree">
           <h1>Tree</h1>
-          <?php require "components/tree.php"; ?>
-        </div>
-      
-        <div class="tabs-pane" id="">
-          <h1>Shuttle</h1>
-          <?php #require "components/shuttle.php"; ?>
-        </div>
-      
-        <div class="tabs-pane" id="">
-          <h1>_____</h1>
-        </div>  
-      
-        <div class="tabs-pane" id="">
-          <h1>_____</h1>
+          <div class="sub-section">
+            <h4>Sub-section: Tree</h4>
+            <div class="component">
+              <table class="tree-simple">
+                <tr>
+                  <td class="tree-simple-active"><a href="#">Business Terms</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Categories</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Data Objects</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Glossaries</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Mapping Specifications</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Policies</a></td>
+                </tr>
+              </table>
+            </div><!-- END of component -->
+          </div>
+          <div class="sub-section">
+            <h4>Sub Section: Simple Expand/Collapse Tree</h4>
+            <div class="component">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <a href="#">Parent</a>
+                    <ul>
+                      <li>
+                        <a href="#">Child 1</a>
+                        <ul>
+                          <li>
+                            <a href="#">Grand Child</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Child 2</a>
+                        <ul>
+                          <li>
+                            <a href="#">Grand Child</a>
+                          </li>
+                          <li>
+                            <a href="#">Grand Child</a>
+                            <ul>
+                              <li>
+                                <a href="#">Great Grand Child</a>
+                                <ul>
+                                  <li>
+                                    <a href="#">Great great Grand Child</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Great great Grand Child</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">Great Grand Child</a>
+                              </li>
+                              <li>
+                                <a href="#">Great Grand Child</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">Grand Child</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Parent2</a>
+                    <ul>
+                      <li>
+                        <a href="#">Child</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- END .tree -->
+            </div>
+            <h4>Sub-section: Expand Collapse Tree with checkboxes</h4>
+            <div class="component">
+              <div class="tree well">
+                <ul>
+                  <li>
+                    <i class="icon-minus-sign"></i><input type="checkbox" /><a href="#">Parent</a>
+                    <ul>
+                      <li>
+                        <i class="icon icon-minus-sign"></i><input type="checkbox" /><a href="#">Child 1</a>
+                        <ul>
+                          <li>
+                            <i class="icon-leaf"></i><input type="checkbox" /><a href="#">Grand Child</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <i class="icon icon-arrow-open"></i><input type="checkbox" /><a href="#">Child 2</a>
+                        <ul>
+                          <li>
+                            <i class="icon-leaf"></i><input type="checkbox" /><a href="#">Grand Child</a>
+                          </li>
+                          <li>
+                            <span class="icon icon-arrow-open"></span><input type="checkbox" /><a href="#">Grand Child ff</a>
+                            <ul>
+                              <li>
+                                <i class="icon-minus-sign"></i><input type="checkbox" /><a href="#">Great Grand Child</a>
+                                <ul>
+                                  <li>
+                                    <i class="icon-leaf"></i><input type="checkbox" /><a href="#">Great great Grand Child</a>
+                                  </li>
+                                  <li>
+                                    <i class="icon-leaf"></i><input type="checkbox" /><a href="#">Great great Grand Child</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <i class="icon-leaf"></i><input type="checkbox" /><a href="#">Great Grand Child</a>
+                              </li>
+                              <li>
+                                <input type="checkbox" /><i class="icon-leaf"></i><a href="#">Great Grand Child</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs-pane" id="">
+                <h1>_____</h1>
+              </div>
+              <div class="tabs-pane" id="">
+                <h1>_____</h1>
+              </div>
+            </div>
+          </div><!-- END .tabs-container -->
         </div>
       </div>
-    </div><!-- END .tabs-container -->
-  
-  
-  
-  
-  </div><!--END .container -->
-  
+
+
+  <!--END .container -->
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="dist/js/informatica.js"></script>
-
   <script type="text/javascript">
-    var blah = $('#blah');
-    blah.tooltip();
+  var blah = $('#blah');
+  blah.tooltip();
   </script>
 </body>
+
 </html>

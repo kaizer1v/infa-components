@@ -1,5 +1,4 @@
 $(document).on("click", ".tabs > li > a", function(e) {
-// $(".tabs > li").on("click", "> a", function(e) {
 	e.preventDefault()
 	selected = $(this).attr("href")
 
