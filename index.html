@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+  <title>Informatica Component Library</title>
+
+  <link type="text/css" rel="stylesheet" href="dist/css/informatica.css" />
+  <style>
+    .section {
+      display: block;
+      /* width: 100%; */
+      margin: 20px;
+      border-bottom: 3px solid #333;
+    }
+      .section > h1 {
+        color: red;
+      }
+      .sub-section {
+        display: block;
+        margin: 10px;
+      }
+        .sub-section > h4 {
+          color: blue;
+        }
+
+    .component {
+      display: block;
+      margin: 5px;
+    }
+  </style>
+  
+  
+</head>
+<body style="margin-top: 40px">
+  <header>
+    <table class="headerbar fixed-top">
+      <tr>
+        <td width="140px"><img src="./images/infa-logo.png" alt="Informatica" /></td>
+        <td width="80px" class="dropdown"><!-- Here the td itself can act as .dropdown -->
+          <a class="dropdown-link" href="#">Component<span class="icon icon-carat"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-menu-header text-infa-orange">Scaffolding / Basic</li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#grids">Grids</a></li>
+            <li><a href="#form">Form Elements</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#icons"><span class="icon icon-asset"></span>Icons</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#dropdowns">Dropdowns</a></li>
+            
+            <hr class="divider" />
+            <li class="dropdown-menu-header text-infa-orange">Bars</li>
+            <li><a href="#headerbar">Headerbar</a></li>
+            <li><a href="#titlebar">Titlebar</a></li>
+            <li><a href="#tabs">Tabs</a></li>
+            <li><a href="#modal">Modal</a></li>
+            
+            <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+            <li><a href="#">Another Item</a></li>
+            <li><a href="#">Just a link</a></li>
+            <li>No hyperlink</li>
+            
+            <hr class="divider" />
+            <li class="dropdown-menu-header">Menu Header</li>
+            <li><a href="#">Just a link</a></li>
+            <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+          </ul>
+        </td>
+        <td width="150px"><a href="./templates/">Sample Templates</a></td>
+        <td><input type="search" placeholder="Search All" style="width: 40%" /></td>
+        <td width="20px"><span class="icon icon-flag"></span></td>
+        <td width="80px"><a href="#">Manage</a></td>
+        <td width="100px"><a href="#">Username</a></td>
+        <td width="30px"><span class="icon icon-help"></span></td>
+        <td width="50px"><span class="icon icon-action"></span></td>
+      </tr>
+    </table>
+  </header>
+  
+  <div id="component_container" class="clearfix scrollable">
+  
+    <div id="primary-tabs" class="tabs-container">
+      <ul class="tabs">
+        <li><a href="#typography" class="infa-green" data-toggle="tab">Typography</a></li>
+        <li><a href="#grids" data-toggle="tab">Grids</a></li>
+        <li><a href="#form_elements" data-toggle="tab">Form Elements</a></li>
+        <li><a href="#buttons" data-toggle="tab">Buttons</a></li>
+        <li><a href="#lists" data-toggle="tab">Lists</a></li>
+        <li><a href="#icons" data-toggle="tab">icons</a></li>
+        <li><a href="#tables" data-toggle="tab">Grid View / Tables</a></li>
+        <li><a href="#dropdowns" data-toggle="tab">Dropdowns</a></li>
+        <li><a href="#headerbar" data-toggle="tab">Headerbar</a></li>
+        <li><a href="#titlebar" data-toggle="tab">Titlebar</a></li>
+        <li><a href="#tabs" data-toggle="tab">Tabs</a></li>
+        <li><a href="#boxes" data-toggle="tab">Boxes</a></li>
+        <li><a href="#wizard" data-toggle="tab">Wizard</a></li>
+        <li><a href="#modal" data-toggle="tab">Modal</a></li>
+        <li class="active"><a href="#accordian" data-toggle="tab">Accordians</a></li>
+        <li><a href="#tree" data-toggle="tab">Tree</a></li>
+        <li><a href="#shuttle" data-toggle="tab">Shutte</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tabs-content">
+        <div class="tabs-pane" id="typography">
+          <h1>Typography</h1>
+          <div w3-include-html="dist/components/typography.html"></div>
+        </div>
+      
+        <div class="tabs-pane" id="grids">
+          <h1>Grids</h1>
+          <?php require "components/grids.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="form_elements">
+          <h1>Form Elements</h1>
+          <?php require "components/form.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="buttons">
+          <h1>Buttons</h1>
+          <div class="sub-section">
+            <h4>Sub-section: Buttons</h4>
+            <table class="infa-table" style="width: 50%">
+              <thead>
+                <tr>
+                  <th>Class Name</th>
+                  <th>Buttons</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td><button>Default Button</button></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input type="submit" value="Submit Button" /></td>
+                </tr>
+                <tr>
+                  <td><code>.btn-primary</code></td>
+                  <td><button class="btn-primary">Primary Button</button></td>
+                </tr>
+                <tr>
+                  <td><code>.active</code></td>
+                  <td><button class="active">Active Button</button></td>
+                </tr>
+                <tr>
+                  <td><code>.disabled</code></td>
+                  <td><button class="disabled">Disabled Button</button></td>
+                </tr>
+                <tr>
+                  <td><code>.btn-next</code></td>
+                  <td><button class="btn-next">Next</button></td>
+                </tr>
+                <tr>
+                  <td><code>.btn-prev</code></td>
+                  <td><button class="btn-prev">Prev</button></td>
+                </tr>
+                <tr>
+                  <td><code>.dropdown</code></td>
+                  <td>
+                    <button class="btn dropdown">
+                      <a class="dropdown-link" href="#">Link<span class="icon icon-carat"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-menu-header text-infa-orange">Menu Header</li>
+                        <li><a href="#">Sub menu item 1</a></li>
+                        <li><a href="#">Another Item</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                        <li><a href="#"><input type="checkbox" />Sub menu item 1</a></li>
+                        <li class="disabled">Disabled Link</li>
+                        <hr class="divider" />
+                        <li class="dropdown-menu-header text-infa-dblue">Menu Header</li>
+                        <li><a href="#">Another Item</a></li>
+                        <li><a href="#">Just a link</a></li>
+                        <li>No hyperlink</li>
+                        <hr class="divider" />
+                        <li class="dropdown-menu-header">Menu Header</li>
+                        <li><a href="#">Just a link</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>With Icon</a></li>
+                      </ul>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>.btn-file</code></td>
+                  <td><input type="file" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+        <div class="tabs-pane" id="lists">
+          <h1>Lists</h1>
+          <?php require "components/lists.php"; ?>
+        </div>
+        
+        <div class="tabs-pane" id="icons">
+          <h1>Icons</h1>
+          <?php require "components/icons.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="tables">
+          <h1>Grid View / Tables</h1>
+          <?php require "components/tables.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="dropdowns">
+          <h1>Dropdowns</h1>
+          <?php require "components/dropdown.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="headerbar">
+          <h1>HeaderBar</h1>
+          <?php require "components/headerbar.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="titlebar">
+          <h1>TitleBar</h1>
+          <?php require "components/titlebar.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="tabs">
+          <h1>Tabs</h1>
+          <?php require "components/tabs.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="boxes">
+          <h1>Boxes</h1>
+          <div class="sub-section">
+            <h4>Sub-section: Simple Boxes and Boxes with Actions</h4>
+            <div class="component">
+              <div class="container">
+                <div class="col col-5">
+                  <div class="box">
+                    <table class="box-title">
+                      <tr>
+                        <th>Box Title Comes here</th>
+                      </tr>
+                    </table>
+                    <div class="box-content">
+                      <p>Access the <span class="text-infa-green text-bold">Glossary</span> workspace to manage Glossary assets. Click one of the following options to create a new asset in the workspace:</p>
+                      <ul class="infa-list">
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-5">
+                  <div class="box">
+                    <table class="box-title">
+                      <tbody>
+                        <tr>
+                          <th class="dropdown">
+                            <a href="#" class="dropdown-link">Title Bar<span class="icon icon-carat"></span></a>
+                          </th>
+                          <td width="30px"><button>Edit</button></td>
+                          <td width="20px"><span class="icon icon-action"></span></td>
+                          <td width="20px" class="border-left"><span class="icon icon-action"></span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="box-content">
+                      <p>Access the <span class="text-infa-green text-bold">Glossary</span> workspace to manage Glossary assets. Click one of the following options to create a new asset in the workspace:</p>
+                      <ul class="infa-list">
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                        <li><a href="#"><span class="icon icon-asset"></span>Business Term</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- END of component -->
+          </div>
+        </div>
+      
+        <div class="tabs-pane" id="wizard">
+          <h1>Wizard</h1>
+          <?php require "components/wizard.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="modal">
+          <h1>Modal Window</h1>
+          <?php require "components/modal.php"; ?>
+        </div>
+      
+        <div class="tabs-pane active" id="accordian">
+          <h1>Accordian</h1>
+          <?php require "components/collapse.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="tree">
+          <h1>Tree</h1>
+          <?php require "components/tree.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="">
+          <h1>Shuttle</h1>
+          <?php #require "components/shuttle.php"; ?>
+        </div>
+      
+        <div class="tabs-pane" id="">
+          <h1>_____</h1>
+        </div>  
+      
+        <div class="tabs-pane" id="">
+          <h1>_____</h1>
+        </div>
+      </div>
+    </div><!-- END .tabs-container -->
+  
+  
+  
+  
+  </div><!--END .container -->
+  
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="dist/js/informatica.js"></script>
+
+  <script type="text/javascript">
+    var blah = $('#blah');
+    blah.tooltip();
+  </script>
+</body>
+</html>
