@@ -35,7 +35,7 @@
 						.fadeIn(1000);
 						
 					if(defaults.rounded === true) $('#tooltip').addClass('rounded');
-				}, function(e) {
+				}, function() {
 					$('#tooltip').remove();
 				});
 			}
